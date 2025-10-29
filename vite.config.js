@@ -38,8 +38,6 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Use the shim for react-dom/server to avoid CommonJS/ESM interop runtime errors
-      'react-dom/server': path.resolve(__dirname, './shims/react-dom-server.js'),
     },
   },
   ssr: {
