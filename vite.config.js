@@ -3,6 +3,7 @@ import {
   cloudflareDevProxyVitePlugin as remixCloudflareDevProxy,
 } from '@remix-run/dev';
 import { defineConfig } from 'vite';
+import path from 'path';
 import jsconfigPaths from 'vite-jsconfig-paths';
 import mdx from '@mdx-js/rollup';
 import remarkFrontmatter from 'remark-frontmatter';
@@ -35,7 +36,14 @@ export default defineConfig({
     }),
     jsconfigPaths(),
   ],
+  resolve: {
+    alias: {
+      // Use the shim for react-dom/server to avoid CommonJS/ESM interop runtime errors
+      'react-dom/server': path.resolve(__dirname, './shims/react-dom-server.js'),
+    },
+  },
   ssr: {
-    noExternal: ['react-dom/server'],
+    // remove react-dom/server from noExternal so Vite will process the shim instead
+    noExternal: [],
   },
 });
