@@ -1,0 +1,52 @@
+__  __  __
+\ \ \ \ \/
+ \ \/\ \
+  \/  \/
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | デザイナー
+
+Hamish Williams
+Hand crafted design
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+twitter.com/hamishmw
+github.com/hamishmw
+
+_______________________________________________________________________________
+
+PROGRAMMER | 
+
+Jakub Kaniewski
+Web development
+
+Development tools:
+Visual Studio Code
+BlackBoxAI
+
+github.com/J4KDev
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Remix
+Three.js
+Framer Motion
+
+_______________________________________________________________________________
+
+FONTS | フォント
+
+Gotham
+IPA Gothic Regular
+Hiragino Kaku Gothic W8

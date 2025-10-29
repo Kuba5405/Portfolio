@@ -1,0 +1,26 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jakubkaniewski.com/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakubkaniewski.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakubkaniewski.com/articles/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakubkaniewski.com/uses/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakubkaniewski.com/projects/netflix-clone/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakubkaniewski.com/articles/hello-world</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
