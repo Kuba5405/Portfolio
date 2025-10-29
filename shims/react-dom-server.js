@@ -1,9 +1,13 @@
 // Shim to make react-dom/server compatible with ESM named imports
-// Some environments (or package builds) expose react-dom/server as CommonJS.
-// Import the default and re-export the commonly used named exports.
-import ReactDOMServer from 'react-dom/server';
+// Some environments expose react-dom/server as CommonJS while others expose ESM named exports.
+// Import the module as a namespace and pick either the namespace or its default export safely.
+import * as ReactDOMServerNS from 'react-dom/server';
 
-const { renderToReadableStream, renderToPipeableStream, renderToStaticMarkup } = ReactDOMServer || {};
+// Prefer the default export if present (CommonJS interop), otherwise use the namespace
+const ReactDOMServer = ReactDOMServerNS && 'default' in ReactDOMServerNS ? ReactDOMServerNS.default : ReactDOMServerNS;
 
-export { renderToReadableStream, renderToPipeableStream, renderToStaticMarkup };
+export const renderToReadableStream = ReactDOMServer?.renderToReadableStream;
+export const renderToPipeableStream = ReactDOMServer?.renderToPipeableStream;
+export const renderToStaticMarkup = ReactDOMServer?.renderToStaticMarkup;
+
 export default ReactDOMServer;
