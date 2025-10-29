@@ -28,7 +28,7 @@ export const meta = () => {
 export const NetflixClone = () => {
   return (
     <Fragment>
-      <ProjectContainer className={styles.netflix-clone}>
+  <ProjectContainer className={styles['netflix-clone']}>
         <ProjectHeader
           title={title}
           description={description}

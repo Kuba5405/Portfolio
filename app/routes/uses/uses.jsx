@@ -50,7 +50,7 @@ export const Uses = () => {
                     choice.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    Chrome is my main browser for both development and general use.
                   </ListItem>
                   <ListItem>
                     <Link href="https://reactjs.org/">React</Link> is my front end
@@ -63,8 +63,7 @@ export const Uses = () => {
                     learning curve but you can do some really powerful stuff with it.
                   </ListItem>
                   <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
+                    For CSS I’ve used Tailwindcss, but these days I’m using vanilla CSS with{' '}
                     <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
                     features today.
                   </ListItem>
@@ -75,11 +74,7 @@ export const Uses = () => {
                   </ListItem>
                   <ListItem>
                     For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
+                    <Link href="https://storybook.js.org/">Storybook</Link>.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -102,7 +97,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Browser</TableHeadCell>
-                    <TableCell>Firefox and Arc</TableCell>
+                    <TableCell>Chrome and Arc</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Main Monitor</TableHeadCell>
@@ -114,7 +109,7 @@ export const Uses = () => {
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Logitech G910</TableCell>
+                    <TableCell>Dark Project Onionite</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Mouse</TableHeadCell>
