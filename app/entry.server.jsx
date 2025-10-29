@@ -1,8 +1,6 @@
 import { RemixServer } from '@remix-run/react';
-import isbot from 'isbot';
-import ReactDOMServer from '../shims/react-dom-server.js';
-
-const { renderToReadableStream } = ReactDOMServer;
+import { isbot } from 'isbot';
+import { renderToReadableStream } from '../shims/react-dom-server.js';
 
 export default async function handleRequest(request, responseStatusCode, responseHeaders, remixContext, loadContext) {
   const body = await renderToReadableStream(
