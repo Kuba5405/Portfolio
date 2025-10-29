@@ -35,4 +35,7 @@ export default defineConfig({
     }),
     jsconfigPaths(),
   ],
+  ssr: {
+    noExternal: ['react-dom/server'],
+  },
 });
